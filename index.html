@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
    <header>
@@ -88,6 +89,54 @@
     </div>
     <input id="consulta-2" type="button" value="Learn more">
 
+    <div id="main-2">
+        <h1>Agendar consulta</h1>
+    </div>
+
+    <div id="=corpo">
+    </div class="text-bg-primary p-3">
+
+    <form class="row g-3 m-4" method="POST" action="./actions/processaAdicionar.php">
+      <div class="col-md-6">
+        <label for="nome" class="form-label-lg">Nome</label>
+        <input type="text" name="nome" class="form-control form-control-lg" id="nome" required>
+      </div>
+      <div class="col-md-6">
+        <label for="cpf" class="form-label form-label-lg">CPF</label>
+        <input type="text" name="cpf" class="form-control form-control-lg" id="cpf" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label-lg">E-mail</label>
+        <input type="text" name="email" class="form-control form-control-lg" id="email" required>
+      </div>
+      <div class="col-md-6">
+        <label for="telefone" class="form-label-lg">Telefone</label>
+        <input type="number" name="telefone" class="form-control form-control-lg" id="telefone" required>
+      </div>
+      <div class="col-md-6">
+        <label for="datas" class="form-label-lg">Data</label>
+        <input type="date" name="datas" class="form-control form-control-lg" id="datas" required>
+      </div>
+      <div class="col-md-6">
+        <label for="hora" class="form-label-lg">Hora</label>
+        <input type="time" name="hora" class="form-control form-control-lg" id="hora" required>
+      </div>
+      
+    </select>
+      </div>
+      <div class="col-12">
+        
+      </div>
+      <div>
+        <button  href="./actions/processaAdicionar.php" id="btn_confirmar "  type="submit"  class="btn btn-primary btn_confirmar  m-4 " >Enviar</button>
+      </div>
+
+    </div>
+
+
+
+
+    
     <div id="magal">
      <aside>
          <h2 id="second-tittle">Leading healthcare</h2>
@@ -153,6 +202,11 @@
     </footer>
 
         
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
+
+
+    
 </html>
